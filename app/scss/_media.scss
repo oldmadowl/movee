@@ -1,0 +1,453 @@
+@media (max-width: 1400px) {
+  .book__inner{
+    padding: 0;
+  }
+  .book__checkbox-line{
+    text-align: left;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header__wrapper{
+    background-position: right -100px center;
+  }
+  .header__man{
+    right: 170px;
+  }
+  .how__list{
+    padding: 0;
+  }
+  .cars{
+    .slick-next{
+      right: 0;
+    }
+    .slick-prev{
+      left: 0;
+    }
+  }  
+}
+
+@media (max-width: 1100px) {
+  .header__items{
+    display: block;
+  }
+  .header__item+.header__item{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .how__item{
+    max-width: 100%;
+  }
+  .price__inner{
+    flex-wrap: wrap;
+  }
+  .price__item{
+    flex-basis: calc(50% - 25px);
+  }
+  .cars{
+    padding-bottom: 80px;
+  }
+  .slick-dots{
+    bottom: -20px;
+  }
+  .cars__item-info{
+    margin-right: 50px;
+  }
+  .cars__item-img{
+    width: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .feedback__inner,
+  .footer__inner{
+    flex-wrap: wrap;
+  }
+  .feedback__item{
+    flex-basis: calc(50% - 22px);
+  }
+  .footer__col-about{
+    flex-basis: 100%;
+    margin-bottom: 46px;
+  }
+  .footer__logo{
+    margin-bottom: 36px;
+  }
+  .footer__politics+.footer__politics{
+    margin-top: 18px;
+  }
+  .footer__politics{
+    display: block;
+  }
+  .footer{
+    padding: 50px 0 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__tel{
+    display: none;
+  }
+  .call-btn{
+    display: none;
+  }
+  .header__man{
+    right: -20px;
+  }
+  .cars__item-info{
+    margin-right: 15px;
+  }
+  .cars__item-img{
+    width: 350px;
+  }
+  .footer__col-call{
+    flex-basis: 100%;
+    margin-top: 40px;
+    text-align: left;
+  }
+  .footer__tel{
+    display: block;
+  }
+  .footer__inner{
+    justify-content: flex-start;
+  }
+  .footer__col--contacts{
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__wrapper{
+    background-image: none;
+  }
+  .menu{
+    &__btn{
+      display: block;
+      position: relative;
+      z-index: 11;
+      &--active{
+        .menu__btn-line:nth-child(2){
+          display: none;
+        }
+        .menu__btn-line:first-child{
+          transform: rotate(45deg) translateY(7px);
+        }
+        .menu__btn-line:last-child{
+          transform: rotate(-45deg) translateY(-7px);
+        }
+      }
+    }
+    &__list{
+      position: absolute;
+      left: -15px;
+      right: -15px;
+      top: 0;
+      background-color: $yellow;
+      z-index: 10;
+      padding: 100px 0 20px;
+      border-bottom: 5px solid $text;
+      display: none;
+    }
+    &__item,
+    &__link{
+      display: block;
+    }
+    &__item + &__item{
+      margin-left: 0;
+      border-top: 1px solid $text;
+    }
+    &__link{
+      font-size: 25px;
+      line-height: 35px;
+      padding: 20px 0;
+      text-align: center;
+    }
+  }
+  .header__items{
+    display: none;
+  }
+  .header__content{
+    display: block;
+    min-height: auto;
+    padding: 0;
+  }
+  .header__offer{
+    text-align: center;
+    min-height: calc(100vh - 75px);
+    padding-bottom: 40px;
+  }
+  .header__btn-accent{
+    margin-bottom: 0;
+    margin-top: 420px;
+    &::before{
+      display: none;
+    }
+  }
+  .header__man{
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 450px;
+    bottom: 100px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .header__top{
+    height: 75px;
+    position: relative;
+  }
+  .header__title{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0 auto;
+  }
+  .header__subtitle{
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .price__item{
+    flex-basis: 100%;
+  }
+  .cars__item-info{
+    display: none;
+  }
+  .cars__item-img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .cars__slider-item-inner{
+    display: block;
+  }
+  .cars__short-info{
+    display: block;
+    text-align: center;
+  }
+  .slick-dots{
+    bottom: -40px;
+  }
+  .feedback__item{
+    flex-basis: 100%;
+  }
+  .book__form-input{
+    width: 100%;
+    margin-right: 0;
+  }
+  .adress__block{
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__logo{
+    width: 62px;
+  }
+  .logo__img{
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .header__top{
+    height: auto;
+    padding: 27px 0 17px;
+  }
+  .header__offer{
+    min-height: calc(100vh - 66px);
+  }
+  .header__title{
+    font-size: 28px;
+    line-height: 37px;
+    margin-bottom: 5px;
+  }
+  .header__subtitle{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .header__btn-accent{
+    display: block;
+    width: 100%;
+    &-link{
+      width: 100%;
+    }
+  }
+  .how{
+    padding-top: 40px;
+  }
+  .title{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .how__title,
+  .cars__title,
+  .feedback__title,
+  .price__title{
+    margin-bottom: 40px;
+  }
+  .how__item{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    &::before{
+      position: static;
+      margin-right: 20px;
+    }
+  }
+  .how__item-text,
+  .subtitle,
+  .price__item,
+  .adress__logo,
+  .adress__social{
+    display: none;
+  }
+  .how__item-title{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .price{
+    background-color: #F8FBFF;
+    padding: 50px 0;
+  }
+  .price__item--active{
+    display: block;
+    border: none;
+    background-color: #F8FBFF;
+  }
+  .price__item{
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .price__item-title{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+  .price__item-list{
+    margin-bottom: 40px;
+  }
+  .button{
+    width: 100%;
+  }
+  .price__all-link{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .cars__tabs-btn{
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    height: auto;
+    &--active{
+      font-weight: 500;
+      text-decoration: underline;
+      text-decoration-color: $yellow;
+    }
+  }
+  .cars__short-info{
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .cars{
+    padding-top: 40px;
+  }
+  .feedback__item{
+    display: none;
+    margin-bottom: 0;
+    &--active{
+      display: block;
+    }
+  }
+  .feedback{
+    padding: 40px 0 50px;
+  }
+  .feedback__item-name{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+  .feedback__item-text{
+    margin-bottom: 15px;
+  }
+  .feedback__inner{
+    margin-bottom: 45px;
+  }
+  .book__title{
+    text-align: center;
+  }
+  .book__subtitle{
+    text-align: center;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .book__btn-accent{
+    display: block;
+    width: 100%;
+    margin-top: 38px;
+    margin-bottom: 14px;
+    &::before{
+      display: none;
+    }
+    &-link{
+      width: 100%;
+    }
+  }
+  .book{
+    padding: 60px 0 70px;
+  }
+  .book__form-input{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .adress{
+    padding: 0;
+  }
+  .adress__map{
+    position: static;
+    height: 525px;
+  }
+  .adress__block{
+    max-width: 100%;
+    padding: 46px 0 45px 20px;
+  }
+  .adress__list-item{
+    display: block;
+    padding-left: 0;
+    font-size: 15px;
+    line-height: 20px;
+    &::before{
+      display: none;
+    }
+  }
+  .adress__list{
+    margin-bottom: 0;
+  }
+  .footer__col{
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .footer__tel{
+    display: none;
+  }
+  .footer__col-menu{
+    margin-bottom: 46px;
+  }
+  .footer__social{
+    justify-content: center;
+  }
+  .social__item+.social__item{
+    margin-left: 31px;
+  }
+  .footer__col--contacts{
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 701px) {
+  .menu__list{
+    display: block !important;
+  }
+}

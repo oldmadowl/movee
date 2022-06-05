@@ -31,6 +31,10 @@
     padding: 20px 0 80px;
     position: relative;
   }
+  &__offer{
+    position: relative;
+    z-index: 5;
+  }
   &__title{
     max-width: 480px;
     font-weight: 700;
@@ -69,6 +73,7 @@
     &-line{
       height: 2px;
       background-color: $text;
+      transition: all .3s;
       & + &{
         margin-top: 8px;
       }
@@ -178,6 +183,9 @@
     line-height: 37px;
     margin-bottom: 50px;
   }
+  &__all-link{
+    display: none;
+  }
 }
 //end price
 
@@ -257,6 +265,52 @@
   .slick-next{
     right: 45px;
   }
+  &__short-info{
+    display: none;
+  }
+}
+.slick-dots{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  li + li{
+    margin-left: 13px;
+  }
+  button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: $text;
+    transition: all .3s;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .3s;
+    }
+  }
+  .slick-active button{
+    width: 10px;
+    height: 10px;
+    border-color: $text;
+    &::before{
+      content: '';
+      border-color: $yellow;
+    }
+  }
 }
 //end cars
 
@@ -329,11 +383,13 @@
     height: 45px;
     margin-right: 70px;
     outline: none;
+    margin-bottom: 22px;
     &::placeholder{
       color: rgba(51, 51, 51, 0.7);
     }
   }
   &__btn-accent{
+    margin-bottom: 20px;
     &::before{
       border: 1px solid $yellow;
     }
@@ -345,7 +401,6 @@
     }
   }
   &__checkbox-line{
-    margin-top: 22px;
     text-align: right;
   }
   &__form-label{
@@ -364,6 +419,10 @@
     box-shadow: none;
     cursor: pointer;
   }
+  .jq-checkbox input, .jq-radio input{
+    left: 0;
+    top: 0;
+  }
   .jq-checkbox.checked .jq-checkbox__div {
     width: 8px;
     height: 5px;
@@ -372,8 +431,8 @@
     border-left: 2px solid $text;
     transform: rotate(-50deg);
     position: absolute;
-    bottom: 4px;
-    left: 3.5px;
+    left: 2px;
+    top: 2px;
   }
 }
 //end book

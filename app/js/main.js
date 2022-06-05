@@ -15,6 +15,16 @@ $(function(){
   $('.cars__slider').slick({
     prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/slide-left.svg" alt=""></button>',
     nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/slide-right.svg" alt=""></button>',
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1101,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      },
+    ]
   });
 
   $('.feedback__item-rate').rateYo({
@@ -27,6 +37,11 @@ $(function(){
   });
 
   $('.book__form-checkbox').styler();
+
+  $('.menu__btn').on('click', function() {
+    $(this).toggleClass('menu__btn--active');
+    $('.menu__list').slideToggle();
+  });
 
 
 });
