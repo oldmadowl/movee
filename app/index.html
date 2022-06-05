@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOVEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -13,78 +16,80 @@
 <body>
 
   <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <div class="logo">
-          <a class="logo__link" href="#">
-            <img class="logo__img" src="images/logo.svg" alt="">
-          </a>
-        </div>
-        <nav class="menu">
-          <div class="menu__btn">
-            <div class="menu__btn-line"></div>
-            <div class="menu__btn-line"></div>
-            <div class="menu__btn-line"></div>
-          </div>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Цены</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Автопарк</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Отзывы</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="menu__tel" href="tel:88000801213">8(800)-080-12-13</a>
-      </div>
-      <div class="header__content">
-        <div class="header__offer">
-          <h1 class="header__title">
-            Квартирные переезды
-          </h1>
-          <div class="header__subtitle">
-            По Москве и области
-          </div>
-          <div class="header__btn-accent btn-accent">
-            <a class="header__btn-accent-link btn-accent__link" href="#">
-              Заказать
+    <div class="wrapper header__wrapper">
+      <div class="container">
+        <div class="header__top">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="">
             </a>
           </div>
-          <div class="header__items">
-            <div class="header__item">
-              <img class="header__item-icon" src="images/icons/truck-icon.svg" alt="">
-              <div class="header__item-text">
-                Более 800
-                переездов
-              </div>
+          <nav class="menu">
+            <div class="menu__btn">
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
             </div>
-            <div class="header__item">
-              <img class="header__item-icon" src="images/icons/present-icon.svg" alt="">
-              <div class="header__item-text">
-                Бережная
-                упаковка
-              </div>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Цены</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Автопарк</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__tel" href="tel:88000801213">8(800)-080-12-13</a>
+        </div>
+        <div class="header__content">
+          <div class="header__offer">
+            <h1 class="header__title">
+              Квартирные переезды
+            </h1>
+            <div class="header__subtitle">
+              По Москве и области
             </div>
-            <div class="header__item">
-              <img class="header__item-icon" src="images/icons/money-icon.svg" alt="">
-              <div class="header__item-text">
-                Фиксированная
-                цена
+            <div class="header__btn-accent btn-accent">
+              <a class="header__btn-accent-link btn-accent__link" href="#">
+                Заказать
+              </a>
+            </div>
+            <div class="header__items">
+              <div class="header__item">
+                <img class="header__item-icon" src="images/icons/truck-icon.svg" alt="">
+                <div class="header__item-text">
+                  Более 800
+                  переездов
+                </div>
+              </div>
+              <div class="header__item">
+                <img class="header__item-icon" src="images/icons/present-icon.svg" alt="">
+                <div class="header__item-text">
+                  Бережная
+                  упаковка
+                </div>
+              </div>
+              <div class="header__item">
+                <img class="header__item-icon" src="images/icons/money-icon.svg" alt="">
+                <div class="header__item-text">
+                  Фиксированная
+                  цена
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <img class="header__man" src="images/header-man.png" alt="">
-        <div class="call-btn header__call-btn">
-          <a class="call-btn__link" href="#">
-            <img class="call-btn__img" src="images/icons/phone-icon.svg" alt="">
-          </a>
+          <img class="header__man" src="images/header-man.png" alt="">
+          <div class="call-btn header__call-btn">
+            <a class="call-btn__link" href="#">
+              <img class="call-btn__img" src="images/icons/phone-icon.svg" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -95,7 +100,7 @@
         <h2 class="title how__title">
           Как это происходит?
         </h2>
-        <div class="ul how__list">
+        <ul class="how__list">
           <li class="how__item">
             <div class="how__item-title">
               Оценка объема предстоящих работ
@@ -128,7 +133,7 @@
               Опытные грузчики быстро расставят мебель и уберут мусор от распаковки.
             </div>
           </li>
-        </div>
+        </ul>
       </div>
     </section>
     <section class="price">
@@ -195,7 +200,9 @@
                 Переезд за 6 часов
               </li>
             </ul>
-            <div class="price__item-cost"></div>
+            <div class="price__item-cost">
+              16 490₽
+            </div>
             <a class="price__item-btn button" href="#">Заказать</a>
           </div>
         </div>
@@ -211,12 +218,12 @@
         </div>
         <div class="cars__tabs">
           <div class="cars__tabs-controls">
-            <a class="cars__tabs-btn cars__tabs-btn--active" href="#">Газели</a>
-            <a class="cars__tabs-btn" href="#">Каблуки</a>
-            <a class="cars__tabs-btn" href="#">Грузовики</a>
+            <a class="cars__tabs-btn button cars__tabs-btn--active" href="#item-1">Газели</a>
+            <a class="cars__tabs-btn button" href="#item-2">Каблуки</a>
+            <a class="cars__tabs-btn button" href="#item-3">Грузовики</a>
           </div>
           <div class="cars__tabs-content">
-            <div class="cars__tabs-item" id="item-1">
+            <div class="cars__tabs-item cars__tabs-item--active" id="item-1">
               <div class="cars__slider">
                 <div class="cars__slider-item">
                   <div class="cars__slider-item-inner">
@@ -378,31 +385,35 @@
     </section>
     <section class="book">
       <div class="container">
-        <h2 class="book__title title">
-          Закажи переезд прямо сейчас
-        </h2>
-        <div class="book__subtitle">
-          Мы перезвоним в течении 10 секунд
-        </div>
-        <form class="book__form">
-          <input class="book__form-input" type="text" placeholder="Ваше имя" required>
-          <input class="book__form-input" type="tel" placeholder="Телефон" required>
-          <div class="book__btn-accent btn-accent">
-            <button class="book__btn-accent-link btn-accent__link" type="submit">
-              Перезвонить мне
-            </button>
+        <div class="book__inner">
+          <h2 class="book__title title">
+            Закажи переезд прямо сейчас
+          </h2>
+          <div class="book__subtitle">
+            Мы перезвоним в течении 10 секунд
           </div>
-          <label class="book__form-label">
-            <input class="book__form-checkbox" type="checkbox">
-            <span>Даю согласие на обработку данных</span>
-          </label>
-        </form>
+          <form class="book__form">
+            <input class="book__form-input" type="text" placeholder="Ваше имя" required>
+            <input class="book__form-input" type="tel" placeholder="Телефон" required>
+            <div class="book__btn-accent btn-accent">
+              <button class="book__btn-accent-link btn-accent__link" type="submit">
+                Перезвонить мне
+              </button>
+            </div>
+            <div class="book__checkbox-line">
+              <label class="book__form-label">
+                <input class="book__form-checkbox" type="checkbox">
+                <span>Даю согласие на обработку данных</span>
+              </label>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
     <section class="adress">
       <div class="container">
         <div class="adress__block">
-          <div class="logo">
+          <div class="logo adress__logo">
             <a class="logo__link" href="#">
               <img class="logo__img" src="images/logo.svg" alt="">
             </a>
@@ -454,83 +465,85 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="footer__col footer__col-about">
-        <div class="logo">
-          <a class="logo__link" href="#">
-            <img class="logo__img" src="images/logo.svg" alt="">
+      <div class="footer__inner">
+        <div class="footer__col footer__col-about">
+          <div class="logo footer__logo">
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="">
+            </a>
+          </div>
+          <a class="footer__politics" href="#">
+            Политика
+            конфиденциальнности
+          </a>
+          <a class="footer__politics" href="#">
+            Соглашение на обработку персональных данных
           </a>
         </div>
-        <a class="footer__politics" href="#">
-          Политика
-          конфиденциальнности
-        </a>
-        <a class="footer__politics" href="#">
-          Соглашение на обработку персональных данных
-        </a>
-      </div>
-      <div class="footer__col footer__col-menu">
-        <ul class="footer__menu">
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-              Цена
-            </a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-              Автопарк
-            </a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-              Отзывы
-            </a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__col footer__col--contacts">
-        <ul class="footer__social social">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <img class="social__img" src="images/icons/youtube-icon.svg" alt="">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <img class="social__img" src="images/icons/vk-icon.svg" alt="">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <img class="social__img" src="images/icons/fb-icon.svg" alt="">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <img class="social__img" src="images/icons/inst-icon.svg" alt="">
-            </a>
-          </li>
-        </ul>
-        <a class="footer__email" href="mailto:hello@movee.ru">
-          hello@movee.ru
-        </a>
-      </div>
-      <div class="footer__col footer__col-call">
-        <a class="button footer__call-button" href="#">
-          Обратный звонок
-        </a>
-        <a class="footer__tel" href="tel:88000801213">
-          8 (800)-080-12-13
-        </a>
+        <div class="footer__col footer__col-menu">
+          <ul class="footer__menu">
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Цена
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Автопарк
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--contacts">
+          <ul class="footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="images/icons/youtube-icon.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="images/icons/vk-icon.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="images/icons/fb-icon.svg" alt="">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="images/icons/inst-icon.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          <a class="footer__email" href="mailto:hello@movee.ru">
+            hello@movee.ru
+          </a>
+        </div>
+        <div class="footer__col footer__col-call">
+          <a class="button footer__call-button" href="#">
+            Обратный звонок
+          </a>
+          <a class="footer__tel" href="tel:88000801213">
+            8 (800)-080-12-13
+          </a>
+        </div>
       </div>
     </div>
   </footer>

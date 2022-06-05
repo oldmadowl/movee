@@ -3,5 +3,497 @@
 @import 'global';
 
 
+//start header
+.header{
+  background-color: $yellow;
+  &__wrapper{
+    background-image: url(../images/backgrounds/header-car.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right 203px center;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 117px;
+  }
+  &__tel{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: underline;
+  }
+  &__content{ 
+    min-height: calc(100vh - 117px);
+    display: flex;
+    align-items: center;
+    padding: 20px 0 80px;
+    position: relative;
+  }
+  &__title{
+    max-width: 480px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 89px;
+  }
+  &__subtitle{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 40px;
+  }
+  &__btn-accent{
+    margin-bottom: 70px;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    max-width: 550px;
+  }
+  &__item{
+    display: flex;
+    & + &{
+      margin-left: 30px;
+    }
+    &-icon{
+      margin-right: 8px;
+    }
+  }
+}
+.menu{
+  &__btn{
+    display: none;
+    width: 44px;
+    cursor: pointer;
+    &-line{
+      height: 2px;
+      background-color: $text;
+      & + &{
+        margin-top: 8px;
+      }
+    }
+  }
+  &__item + &__item{
+    margin-left: 48px;
+  }
+  &__link{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+}
+.header__man{
+  position: absolute;
+  bottom: 0;
+  right: 305px;
+}
+.header__call-btn{
+  bottom: 58px;
+  right: 38px;
+}
+//end header
+
+
+//start how
+.how{
+  padding-top: 95px;
+  &__title{
+    margin-bottom: 60px;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    counter-reset: count;
+    padding: 0 100px;
+  }
+  &__item{
+    position: relative;
+    counter-increment: count;
+    max-width: 500px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    &::before{
+      content: counter(count, decimal-leading-zero);
+      position: absolute;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 50px;
+      left: 0;
+      top: 0;
+      text-shadow: 2px 0 0 $yellow;
+    }
+  }
+  &__item-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+}
+//end how
+
+
+//start price
+.price{
+  padding: 59px 0 30px;
+  &__subtitle{
+    margin-bottom: 60px;
+  }
+  &__inner{
+    display: flex;
+    margin-left: -25px;
+  }
+  &__item{
+    flex-basis: calc(33.333% - 25px);
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #EBEBEB;
+    background-color: #fff;
+    padding: 84px 30px 79px;
+    text-align: center;
+    &--active{
+      border-color: $yellow;
+    }
+  }
+  &__item-title{
+    font-weight: 600;
+    font-size: 24px;
+    height: 29px;
+    margin-bottom: 60px;
+  }
+  &__item-list{
+    margin-bottom: 60px;
+  }
+  &__list-item{
+    display: block;
+    & + &{
+      margin-top: 25px;
+    }
+  }
+  &__item-cost{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 50px;
+  }
+}
+//end price
+
+
+//start cars
+.cars{
+  padding: 48px 0 46px;
+  &__subtitle{
+    margin-bottom: 60px;
+  }
+  &__tabs-controls{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  &__tabs-btn{
+    background-color: transparent;
+    width: 200px;
+    border: 1px solid #EBEBEB;
+    &--active{
+      border-color: $yellow;
+    }
+    & + &{
+      margin-left: 20px;
+    }
+  }
+  &__tabs-item{
+    display: none;
+    &--active{
+      display: block;
+    }
+  }
+  &__slider-item-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item-info{
+    margin-right: 112px;
+  }
+  &__item-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 35px;
+  }
+  &__item-list{
+    margin-bottom: 35px;
+  }
+  &__list-item{
+    display: block;
+    position: relative;
+    padding-left: 29px;
+    & + &{
+      margin-top: 25px;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 13px;
+      height: 14px;
+      background-image: url(../images/icons/check-icon-black.svg);
+      background-size: cover;
+    }
+  }
+  .slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .slick-prev{
+    left: 45px;
+  }
+  .slick-next{
+    right: 45px;
+  }
+}
+//end cars
+
+
+//start feedback
+.feedback{
+  background-color: $yellow;
+  padding: 100px 0 95px;
+  &__title{
+    margin-bottom: 60px;
+  }
+  &__inner{
+    display: flex;
+    margin-left: -22px;
+    margin-bottom: 39px;
+  }
+  &__item{
+    flex-basis: calc(33.333% - 22px);
+    margin-left: 22px;
+    margin-bottom: 20px;
+  }
+  &__item-name{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+  }
+  &__item-details{
+    margin-bottom: 19px;
+    display: flex;
+    align-items: center;
+  }
+  &__item-date{
+    margin-right: 9px;
+  }
+  &__item-text{
+    margin-bottom: 18px;
+  }
+  &__item-link{
+    text-decoration: underline;
+  }
+  &__btn{
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid $text;
+  }
+}
+//end feedback
+
+
+//start book
+.book{
+  padding: 124px 0 123px;
+  &__inner{
+    padding: 0 150px;
+  }
+  &__title{
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  &__subtitle{
+    margin-bottom: 34px;
+  }
+  &__form-input{
+    width: 300px;
+    border-bottom: 1px solid $text;
+    font-size: 20px;
+    line-height: 24px;
+    height: 45px;
+    margin-right: 70px;
+    outline: none;
+    &::placeholder{
+      color: rgba(51, 51, 51, 0.7);
+    }
+  }
+  &__btn-accent{
+    &::before{
+      border: 1px solid $yellow;
+    }
+    &-link{
+      width: 250px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+    }
+  }
+  &__checkbox-line{
+    margin-top: 22px;
+    text-align: right;
+  }
+  &__form-label{
+    span{
+      font-size: 12px;
+      line-height: 15px;
+      margin-left: 7px;
+    }
+  }
+  .jq-checkbox, .jq-radio{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    border: 2px solid $text;
+    background: transparent;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  .jq-checkbox.checked .jq-checkbox__div {
+    width: 8px;
+    height: 5px;
+    margin: 0;
+    border-bottom: 2px solid $text;
+    border-left: 2px solid $text;
+    transform: rotate(-50deg);
+    position: absolute;
+    bottom: 4px;
+    left: 3.5px;
+  }
+}
+//end book
+
+
+//start adress
+.adress{
+  padding: 162px 0 178px;
+  position: relative;
+  &__block{
+    background-color: #fff;
+    max-width: 368px;
+    margin-left: 140px;
+    padding: 40px 35px;
+    position: relative;
+    z-index: 2;
+  }
+  &__logo{
+    margin-bottom: 40px;
+  }
+  &__list{
+    margin-bottom: 55px;
+  }
+  &__list-item{
+    position: relative;
+    padding-left: 29px;
+    & + &{
+      margin-top: 19px;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 3px;
+      width: 13px;
+      height: 14px;
+      background-size: cover;
+      background-image: url(../images/icons/check-icon.svg);
+    }
+  }
+  &__map{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  &__social{
+    justify-content: flex-end;
+  }
+}
+//end adress
+
+
+//start footer
+.footer{
+  background-color: $yellow;
+  padding: 100px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__col{
+    &-about{
+      flex-basis: 240px;
+      color: #0E0F12;
+    }
+    &-menu{
+      flex-basis: 150px;
+    }
+    &-contacts{
+      flex-basis: 180px;
+    }
+    &-call{
+      flex-basis: 250px;
+      text-align: center;
+    }
+  }
+  &__logo{
+    margin-bottom: 40px;
+  }
+  &__politics + &__politics{
+    margin-top: 35px;
+  }
+  &__menu-item{
+    display: block;
+    & + &{
+      margin-top: 15px;
+    }
+  }
+  &__menu-link{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  &__social{
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  &__email{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: underline;
+  }
+  &__call-button{
+    border: 1px solid $text;
+    background-color: transparent;
+    height: 44px;
+    line-height: 44px;
+    margin-bottom: 5px;
+  }
+  &__tel{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: underline;
+  }
+}
+//end footer
 
 @import 'media';
